@@ -79,6 +79,7 @@ uv run DOPAMINE.py --input=./Testfile.fasta --output=./Testoutput.csv
 ```bash
 uv run DOPAMINE.py --input=./Users.fasta --output=./Output.csv
 ```
+> **⚠️ Note:** Large `--input` files can lead to infinite waiting times between domain boundary detection and domain classification. Just restart the program with the exact same command. It will pick up where it left and proceed as normal. Look for `Finished running DomainFinder`.
 
 **Multi-GPU usage:**
 ```bash
