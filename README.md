@@ -53,7 +53,7 @@ uv sync
 Download the models:
 ```bash
 pip install -U huggingface_hub
-huggingface-cli download Stvnap/DOPAMINE --local-dir ./models
+hf download Stvnap/DOPAMINE --local-dir ./models
 ```
 
 To verify installation run:
@@ -61,6 +61,20 @@ To verify installation run:
 uv run DOPAMINE.py --input=./Testfile.fasta --output=./Testoutput.csv
 ```
 
+
+>**⚠️ Note:** If errors or unknown problems occur, DOPAMINE is available as a **Docker** as well.
+
+Init the Docker:
+```bash
+docker build -t dopamine .
+```
+
+Run the Docker with the example fasta file:
+```bash
+docker run --rm -v $(pwd):/work -w /work dopamine \
+  --input=./Testfile.fasta \
+  --output=./test.csv
+```
 
 ### Command-Line Flags
 
