@@ -1,4 +1,4 @@
-# DOPAMINE: DOmain Prediction and Annotation using Machine learning Inference with Neural network-based Evaluation (v.1.1)
+# DOPAMINE: DOmain Prediction and Annotation using Machine learning Inference with Neural network-based Evaluation (v.1.2)
 
 DOPAMINE uses state-of-the-art AI and DL methods to predict Pfam domain IDs and their locations within protein sequences.
 
